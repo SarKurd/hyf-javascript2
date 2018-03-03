@@ -53,28 +53,9 @@ booksTitles.forEach(element => {
     objectOfBooksNames[temp] = {"title": element, "language": "English", "author": "NA"};
 });
 
-// var hello = "hello world";
-// let postion = hello.indexOf(" ") + 1;
-// hello = hello.slice(0, postion) + hello.charAt(postion).toUpperCase() + hello.slice(postion+1); 
-// console.log(hello);
-
-// let objectOfBooksNames = {
-//     "the_hobbit" :{title: "The Hobbit", language: "English", author: "NA"},
-//     "hard_times" :{title: "Hard Times", language: "English", author: "NA"},
-//     "house_rules" :{title: "House Rules", language: "English", author: "NA"},
-//     "leaving_time" :{title: "Leaving Time", language: "English", author: "NA"},
-//     "lucky_jim" : {title: "Lucky Jim", language: "English", author: "NA"},
-//     "lost_horizon" : {title: "Lost Horizon", language: "English", author: "NA"},
-//     "moby_dick" :{title: "Moby Dick", language: "English", author: "NA"},
-//     "one_day" :{title: "One Day", language: "English", author: "NA"},
-//     "plain_truth" :{title: "Plain Truth", language: "English", author: "NA"},
-//     "perfect_match" :{title: "Perfect Match", language: "English", author: "NA"}
-// };
-
 document.body.appendChild(generateUlFromArray(booksTitles));
 
 //7
-
 let bookCovers = {
     "the_hobbit" : "img/the_hobbit.jpeg",
     "hard_times" : "img/hard_times.jpg",
