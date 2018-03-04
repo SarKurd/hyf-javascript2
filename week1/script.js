@@ -21,13 +21,13 @@ function generateUlFromArray(arg)
         bookAsLi.setAttribute("id", element);
         
         let aBookTitle = document.createElement("h2");
-        aBookTitle.appendChild(document.createTextNode(objectOfBooksNames[element]["title"]));
+        aBookTitle.textContent = objectOfBooksNames[element]["title"];
 
         let aBookLanguage = document.createElement("h5");
-        aBookLanguage.appendChild(document.createTextNode(objectOfBooksNames[element]["language"]));
+        aBookLanguage.textContent = objectOfBooksNames[element]["language"];
 
         let aBookAuthor = document.createElement("h5");
-        aBookAuthor.appendChild(document.createTextNode(objectOfBooksNames[element]["author"]));
+        aBookAuthor.textContent = objectOfBooksNames[element]["author"];
 
         bookAsLi.appendChild(aBookTitle);
         bookAsLi.appendChild(aBookLanguage);
@@ -78,7 +78,6 @@ function addImagesToTheli(){
                 anIMG.setAttribute("src", bookCovers[element]);
                 theLi.appendChild(anIMG);
     });
-
 }
 
 addImagesToTheli();
