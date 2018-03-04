@@ -1,3 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+*{
+    box-sizing: border-box;;
+}
+
 ul li img{
-    width: 200px;
+    width: 100%;
+    height: 500px;
+}
+
+h2{
+    font-size: 2em;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0 5px 0 5px;
+    position: relative;
+}
+
+ul li{
+    float: left;
+    width: calc(25% - 10px);
+    margin: 0 5px 0 5px;
 }

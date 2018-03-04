@@ -23,10 +23,10 @@ function generateUlFromArray(arg)
         let aBookTitle = document.createElement("h2");
         aBookTitle.appendChild(document.createTextNode(objectOfBooksNames[element]["title"]));
 
-        let aBookLanguage = document.createElement("h3");
+        let aBookLanguage = document.createElement("h5");
         aBookLanguage.appendChild(document.createTextNode(objectOfBooksNames[element]["language"]));
 
-        let aBookAuthor = document.createElement("h3");
+        let aBookAuthor = document.createElement("h5");
         aBookAuthor.appendChild(document.createTextNode(objectOfBooksNames[element]["author"]));
 
         bookAsLi.appendChild(aBookTitle);
