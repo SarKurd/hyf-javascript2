@@ -72,88 +72,11 @@ let bookCovers = {
 function addImagesToTheli(){
     let arrayOfBookCoversKeys = Object.keys(bookCovers);
     arrayOfBookCoversKeys.forEach(element => {
-        switch(element){
-            case "the_hobbit":{
                 let anIMG = document.createElement("img");
-                let theLi = document.getElementById("the_hobbit");
-                anIMG.setAttribute("alt", "The hobbit");
-                anIMG.setAttribute("src", bookCovers["the_hobbit"]);
+                let theLi = document.getElementById(element);
+                anIMG.setAttribute("alt", objectOfBooksNames[element]["title"]);
+                anIMG.setAttribute("src", bookCovers[element]);
                 theLi.appendChild(anIMG);
-                break;
-            }
-            case "hard_times":{
-                let anIMG = document.createElement("img");
-                let theLi = document.getElementById("hard_times");
-                anIMG.setAttribute("alt", "Hard Times");
-                anIMG.setAttribute("src", bookCovers["hard_times"]);
-                theLi.appendChild(anIMG);
-                break;
-            }
-            case "house_rules":{
-                let anIMG = document.createElement("img");
-                let theLi = document.getElementById("house_rules");
-                anIMG.setAttribute("alt", "House Rules");
-                anIMG.setAttribute("src", bookCovers["house_rules"]);
-                theLi.appendChild(anIMG);
-                break;
-            }
-            case "leaving_time":{
-                let anIMG = document.createElement("img");
-                let theLi = document.getElementById("leaving_time");
-                anIMG.setAttribute("alt", "Leaving Time");
-                anIMG.setAttribute("src", bookCovers["leaving_time"]);
-                theLi.appendChild(anIMG);
-                break;
-            }
-            case "lucky_jim":{
-                let anIMG = document.createElement("img");
-                let theLi = document.getElementById("lucky_jim");
-                anIMG.setAttribute("alt", "Lucky Jim");
-                anIMG.setAttribute("src", bookCovers["lucky_jim"]);
-                theLi.appendChild(anIMG);
-                break;
-            }
-            case "lost_horizon":{
-                let anIMG = document.createElement("img");
-                let theLi = document.getElementById("lost_horizon");
-                anIMG.setAttribute("alt", "Lost Horizon");
-                anIMG.setAttribute("src", bookCovers["lost_horizon"]);
-                theLi.appendChild(anIMG);
-                break;
-            }
-            case "moby_dick":{
-                let anIMG = document.createElement("img");
-                let theLi = document.getElementById("moby_dick");
-                anIMG.setAttribute("alt", "Moby Dick");
-                anIMG.setAttribute("src", bookCovers["moby_dick"]);
-                theLi.appendChild(anIMG);
-                break;
-            }
-            case "one_day":{
-                let anIMG = document.createElement("img");
-                let theLi = document.getElementById("one_day");
-                anIMG.setAttribute("alt", "One Day");
-                anIMG.setAttribute("src", bookCovers["one_day"]);
-                theLi.appendChild(anIMG);
-                break;
-            }
-            case "plain_truth":{
-                let anIMG = document.createElement("img");
-                let theLi = document.getElementById("plain_truth");
-                anIMG.setAttribute("alt", "plain truth");
-                anIMG.setAttribute("src", bookCovers["plain_truth"]);
-                theLi.appendChild(anIMG);
-                break;
-            }
-            case "perfect_match":{
-                let anIMG = document.createElement("img");
-                let theLi = document.getElementById("perfect_match");
-                anIMG.setAttribute("alt", "Perfect Match");
-                anIMG.setAttribute("src", bookCovers["perfect_match"]);
-                theLi.appendChild(anIMG);
-                break;
-            }
-        }
     });
 
 }
