@@ -93,7 +93,7 @@ function repeatStringNumTimes(str, num, loopType) {
 Nested Arrays are just arrays inside another one, we can simply use [] to access them
 arr[i][j] 2D
 arr[i][j][k] 3D
-arr[i][j][][m] 4D
+arr[i][j][k][m] 4D
 .
 .
 .
